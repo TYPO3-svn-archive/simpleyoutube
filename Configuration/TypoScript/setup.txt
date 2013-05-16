@@ -1,0 +1,16 @@
+page.includeJSFooter.simpleyoutube = typo3conf/ext/simpleyoutube/Resources/Public/JavaScript/jquery.fitvids.js
+
+plugin.tx_simpleyoutube {
+    render {
+        header < lib.stdheader 
+        bodytextRTE = TEXT
+        bodytextRTE {
+            field = bodytext
+            parseFunc < lib.parseFunc_RTE
+        }
+        maxW = TEXT
+        maxW.value = 1920
+        maxH = TEXT
+        maxH.value = 1080
+    }
+}
