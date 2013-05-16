@@ -1,0 +1,13 @@
+<f:CObject typoscriptObjectPath="plugin.tx_simpleyoutube.render.header" data="{data}" />
+<div class="videoCont">
+	<iframe
+		id="player_{uid}"
+		src="http://www.youtube.com/embed/{code}?HD=1&theme=light&amp;color=white&amp;autohide=1&amp;showinfo=0&amp;rel=0"
+		width="<f:CObject typoscriptObjectPath="plugin.tx_simpleyoutube.render.maxW" />"
+		height="<f:CObject typoscriptObjectPath="plugin.tx_simpleyoutube.render.maxH" />"
+		frameborder="0">
+	</iframe>
+</div>
+<div class="csc-textpic-text">
+	<f:CObject typoscriptObjectPath="plugin.tx_simpleyoutube.render.bodytextRTE" data="{data}" />
+</div>
